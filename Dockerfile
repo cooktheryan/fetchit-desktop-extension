@@ -21,6 +21,7 @@ RUN --mount=type=cache,target=/usr/src/app/.npm \
 # install
 COPY ui /ui
 RUN npm run build
+RUN echo "jazz hands"
 
 FROM alpine
 LABEL org.opencontainers.image.title="FetchIt" \
